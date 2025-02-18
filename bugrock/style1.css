@@ -1,0 +1,139 @@
+/* Light Mode Styles */
+
+a {
+    color: #fff; /* Blue link color */ /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    font-weight: 500;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+body {
+    font-family: 'DM Mono', serif; /* Updated font-family */
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background-image: url("/bg.png");
+    background-size: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Dark gray */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px -10px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #28a745; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#result {
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+#result h2 {
+    color: #343a40; /* Dark gray */
+}
+
+#result p {
+    background: #f8f9fa; /* Light gray background for result paragraphs */
+    border-left: 4px solid #28a745; /* Green left border */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    line-height: 1.5; /* Improve line spacing */
+}
+
+#result img {
+    border-radius: 5px; /* Rounded corners for the icon */
+}
+
+/* Additional Style Improvements */
+button:disabled {
+    background-color: #6c757d; /* Darker gray for disabled button */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+.container h1, #result h2 {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+#checkStatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/* Minecraft color codes */
+.black { color: #000000; }
+.dark_blue { color: #0000AA; }
+.dark_green { color: #00AA00; }
+.dark_aqua { color: #00AAAA; }
+.dark_red { color: #AA0000; }
+.dark_purple { color: #AA00AA; }
+.gold { color: #FFAA00; }
+.gray { color: #AAAAAA; }
+.dark_gray { color: #555555; }
+.blue { color: #5555FF; }
+.green { color: #55FF55; }
+.aqua { color: #55FFFF; }
+.red { color: #FF5555; }
+.light_purple { color: #FF55FF; }
+.yellow { color: #FFFF55; }
+.white { color: #FFFFFF; }
+.bold { font-weight: bold; }
+.strikethrough { text-decoration: line-through; }
+.underline { text-decoration: underline; }
+.italic { font-style: italic; }
+.reset { color: inherit; font-weight: normal; text-decoration: none; font-style: normal; }
+
+.ps {
+    font-size: 11px;
+    color: gray;
+}
